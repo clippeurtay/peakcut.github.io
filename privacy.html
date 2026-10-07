@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Peakcut</title>
+
+<style>
+:root{--bg:#ffffff;--fg:#14181f;--muted:#5b6575;--accent:#1e3a8a;--line:#e3e7ee;--card:#f5f7fb}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1424;--fg:#e8ecf5;--muted:#9aa6bd;--accent:#8fb0ff;--line:#26304a;--card:#141c33}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header,main,footer{max-width:760px;margin:0 auto;padding-left:20px;padding-right:20px}
+header{display:flex;align-items:center;gap:14px;padding-top:28px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+header img{width:48px;height:48px;border-radius:11px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:1.25rem}
+main{padding-top:24px;padding-bottom:32px}
+h1{font-size:1.9rem;line-height:1.25;margin:.2em 0 .4em}
+h2{font-size:1.25rem;margin:1.8em 0 .4em}
+p,li{color:var(--fg)}
+.muted{color:var(--muted);font-size:.92rem}
+a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:16px 0}
+pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;overflow-x:auto;white-space:pre-wrap;word-break:break-all}
+button{font:inherit;padding:8px 16px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+footer{border-top:1px solid var(--line);padding-top:18px;padding-bottom:36px;color:var(--muted);font-size:.92rem}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<header><img src="logo.png" alt="Peakcut logo"><a href="index.html">Peakcut</a></header>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: October 7, 2026</p>
+
+<p>This policy explains what data Peakcut ("the app", "we") processes and why. Peakcut is a personal tool operated by an individual developer. It has no user accounts of its own and no database of users.</p>
+
+<h2>1. Data we process</h2>
+<ul>
+<li><strong>TikTok authorization data.</strong> When the creator signs in with TikTok Login Kit, TikTok gives the app an access token, a refresh token and the creator's TikTok Open ID. They are stored in a file on the creator's own computer. They are used only to send videos to that creator's TikTok inbox through the TikTok Content Posting API.</li>
+<li><strong>Basic profile data.</strong> The app is authorized for the <code>user.info.basic</code> scope. It does not display, copy or keep profile information beyond the identifiers described above.</li>
+<li><strong>Videos.</strong> Temporary segments of live streams are recorded on the creator's computer so that a highlight can be cut. They are overwritten continuously (about four minutes are kept) and deleted when the tool stops. Finished clips stay on the creator's computer until the creator deletes them or uploads them to TikTok.</li>
+<li><strong>Public chat activity.</strong> The app counts the number of messages in a streamer's public Twitch chat to detect surges. It records only the time of each message. It does not store message text or usernames.</li>
+</ul>
+
+<h2>2. How we use data</h2>
+<p>Data is used only to detect highlights, produce clips, and send finished videos to the authorized creator's TikTok inbox as drafts. We do not use data for advertising, profiling or analytics.</p>
+
+<h2>3. Sharing</h2>
+<p>We do not sell, rent or share personal data with third parties. The app communicates only with TikTok (to authorize the account and upload drafts) and Twitch (to check whether channels are live and to read public chat activity), through their official interfaces and subject to their own policies.</p>
+
+<h2>4. Retention and deletion</h2>
+<p>Authorization tokens are kept until the creator deletes the token file from their computer. The creator can also withdraw the app's access at any time from the authorized-apps or permissions settings in the TikTok app. Temporary stream segments are deleted automatically as described above.</p>
+
+<h2>5. This website</h2>
+<p>This website is a static information site. It does not use cookies, analytics or tracking scripts, and it does not collect personal data. It is hosted by a third-party provider (GitHub Pages), which may keep standard server logs under its own privacy policy.</p>
+
+<h2>6. Your rights</h2>
+<p>You may ask what data we hold about you, or ask us to correct or delete it, by contacting us. Where applicable (for example under the GDPR), you also have the right to lodge a complaint with your local data protection authority.</p>
+
+<h2>7. Children</h2>
+<p>Peakcut is not directed at children under 13, and we do not knowingly process their data.</p>
+
+<h2>8. Changes</h2>
+<p>We may update this policy. The date at the top shows when it was last changed.</p>
+
+<h2>9. Contact</h2>
+<p><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
+
+</main>
+<footer>
+<p><a href="index.html">Home</a> <a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Service</a> <a href="mailto:CONTACT_EMAIL">Contact</a></p>
+<p>Peakcut is an independent project. It is not affiliated with, endorsed by, or sponsored by TikTok or Twitch.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peakcut - Live-stream highlights to short vertical videos</title>
+
+<style>
+:root{--bg:#ffffff;--fg:#14181f;--muted:#5b6575;--accent:#1e3a8a;--line:#e3e7ee;--card:#f5f7fb}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1424;--fg:#e8ecf5;--muted:#9aa6bd;--accent:#8fb0ff;--line:#26304a;--card:#141c33}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header,main,footer{max-width:760px;margin:0 auto;padding-left:20px;padding-right:20px}
+header{display:flex;align-items:center;gap:14px;padding-top:28px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+header img{width:48px;height:48px;border-radius:11px}
+header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:1.25rem}
+main{padding-top:24px;padding-bottom:32px}
+h1{font-size:1.9rem;line-height:1.25;margin:.2em 0 .4em}
+h2{font-size:1.25rem;margin:1.8em 0 .4em}
+p,li{color:var(--fg)}
+.muted{color:var(--muted);font-size:.92rem}
+a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:16px 0}
+pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;overflow-x:auto;white-space:pre-wrap;word-break:break-all}
+button{font:inherit;padding:8px 16px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+footer{border-top:1px solid var(--line);padding-top:18px;padding-bottom:36px;color:var(--muted);font-size:.92rem}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<header><img src="logo.png" alt="Peakcut logo"><a href="index.html">Peakcut</a></header>
+<main>
+
+<h1>Turn live-stream highlights into short vertical videos</h1>
+<p>Peakcut is a personal tool for a content creator. It watches live streams from streamers who have given their permission, detects highlight moments, and prepares short vertical videos with credit to the original streamer. Each finished video is sent to the creator's own TikTok inbox as a <strong>draft</strong>, and the creator reviews and publishes it manually.</p>
+
+<h2>How it works</h2>
+<ol>
+<li><strong>Detect.</strong> The tool checks which of the permitted streamers are live and measures the pace of their public chat. A sudden surge in chat activity marks a possible highlight.</li>
+<li><strong>Clip.</strong> It keeps a short temporary buffer of the stream on the creator's computer and cuts a clip of a few seconds before and after the surge.</li>
+<li><strong>Format.</strong> The clip is converted to a vertical 9:16 video and a credit to the streamer's channel is added.</li>
+<li><strong>Send.</strong> The video is uploaded to the creator's TikTok inbox as a draft. Nothing is posted publicly by the tool itself.</li>
+</ol>
+
+<h2>TikTok integration</h2>
+<div class="card">
+<p><strong>Login Kit</strong> (scope <code>user.info.basic</code>): the creator signs in once with TikTok to authorize the app for their own account.</p>
+<p><strong>Content Posting API</strong> (scope <code>video.upload</code>): the app sends each finished video to the authorized creator's TikTok inbox as a draft. The creator opens TikTok, checks the draft, adds a caption and decides whether to publish.</p>
+</div>
+
+<h2>Permission and credit</h2>
+<p>Peakcut is only used with channels whose owners have agreed to have their highlights shared. Every video credits the original streamer.</p>
+
+<h2>Your data</h2>
+<p>Peakcut does not run a user database or a tracking system. Authorization tokens stay on the creator's own computer. Read the full <a href="clippeurtay@gmail.com">Privacy Policy</a> and the <a href="clippeurtay@gmail.com">Terms of Service</a>.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests about your data: <a href="mailto:clippeurtay@gmail.com">clippeurtay@gmail.com</a></p>
+
+</main>
+<footer>
+<p><a href="index.html">Home</a> <a href="clippeurtay@gmail.com">Privacy Policy</a> <a href="clippeurtay@gmail.com">Terms of Service</a> <a href="mailto:clippeurtay@gmail.com">Contact</a></p>
+<p>Peakcut is an independent project. It is not affiliated with, endorsed by, or sponsored by TikTok or Twitch.</p>
+</footer>
+</body>
+</html>
